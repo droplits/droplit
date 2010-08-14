@@ -1,0 +1,142 @@
+/* Superfish Default skin */
+#superfish {
+  /* width: 100%; */
+  float:left;
+}
+
+#superfish .superfish-content {
+  padding:0 20px;
+}
+
+
+/* #superfish h2 {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+} */
+#superfish .menu {
+  /* float: right; */
+  margin: 0;
+}
+#superfish .menu a {
+  padding: 5px 12px 5px;
+  text-decoration:none;
+}
+#superfish .menu a, 
+#superfish .menu a:visited  { 
+  color:#575757;
+  font-weight:bold;
+  /* font-size:13px; */
+  text-transform:uppercase;
+}
+#superfish .menu li {
+
+}
+
+
+
+#superfish ul.menu li {
+  border-bottom:0 none transparent;
+  margin:0;
+  padding:0 2px 0 0;
+}
+
+#superfish ul.menu li.active-trail a {
+  /* background:url("../../images/droplit-gradient.png") repeat-x scroll 0 -170px #F48026;
+  color:#FFF; */
+}
+
+#superfish ul.menu li a {
+  /* -moz-border-radius:6px 6px 0px 0px; */
+  /* -webkit-border-radius:6px 6px 0px 0px; */
+  /* -moz-box-shadow:0 0 3px -1px #000000; */
+  /* -webkit-box-shadow:0 0 3px -1px #000000; */
+  /* background:url("../../images/droplit-gradient.png") repeat-x scroll 0 -170px #C8E8F3; */
+  background-color:#ececec;
+  /* border-color:#FFFFFF #FFFFFF -moz-use-text-color; */
+  /* border-style:solid solid none; */
+  /* border-width:0; */
+  color:#212121;
+  font-size:12px;
+}
+
+#superfish ul.menu li a.active, #superfish ul.menu li a.active {
+  background-color:#96CCEF;
+  color:#FFF;
+}
+
+#superfish ul.menu li li {
+  margin:0;
+  padding:0;
+}
+#superfish ul.menu li li a {
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  -moz-box-shadow:0 0 0 transparent;
+  -webkit-box-shadow:0 0 0 transparent;
+  /* border-color:transparent; */
+  /* border-style:none; */
+  /* border-width:0; */
+}
+
+#superfish ul.menu li:hover {
+  
+}
+#superfish ul.menu li a:hover {
+  background-color:#96CCEF;
+  color:#FFF;
+}
+
+
+#superfish ul.menu li ul {
+  /* border:3px solid #FFF; */
+  /* -moz-box-shadow:0 0 5px #DDDDDD; */
+  /* -webkit-box-shadow:0 0 5px #DDDDDD; */
+}
+#superfish ul.menu li li {
+
+}
+
+#superfish ul.menu li:hover li {
+  
+}
+#superfish ul.menu li li:hover {
+
+}
+
+#superfish .menu li li {
+}
+#superfish .menu li li a, 
+#superfish .menu li li a:visited  {
+  -moz-border-radius:0;
+  -webkit-border-radius:0;
+  -moz-box-shadow:0 0 0 #FFF;
+  -webkit-box-shadow:0 0 0 #FFF;
+  background-color:#96CCEF;
+  color:#FFFFFF;
+}
+#superfish ul.menu li li a:hover {
+  color:#FFFFFF;
+  background-color:#F48026;
+}
+
+#superfish .menu li li li {
+
+}
+
+#superfish .menu a.active {
+  color:#000;
+}
+#superfish .menu li li a.active { 
+  color: #FFF;
+  background-color:#F48026;
+}
+
+#superfish .menu li:hover, 
+#superfish .menu li.sfHover,
+#superfish .menu a:focus, 
+#superfish .menu a:hover, 
+#superfish .menu a:active,
+#superfish .menu a.active {
+  outline: 0;
+}

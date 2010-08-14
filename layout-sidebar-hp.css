@@ -1,0 +1,163 @@
+#page div.page-content {
+  padding:32px 20px 20px;
+}
+
+#content,
+#right { float:left; }
+
+#content { width:660px; }
+#right { 
+  margin-left:20px;
+  width:260px;
+}
+div.content-wrapper {
+  padding:0 20px 0 0;
+}
+#content .block {
+  background-color:transparent;
+  border-color:transparent;
+  border-style:none;
+  border-width:0px;
+  margin:0 0 20px;
+}
+#content .block .block-content {
+  padding:0;
+}
+
+.column-a {
+  float:left;
+  width:300px;
+  margin-right:20px;
+}
+.column-b {
+  float:left;
+  width:300px;
+  margin-left:20px;
+}
+
+.block table {
+  background-color: transparent;
+}
+.context-block-region div#block-views-Speakers-block_1 div.block-content {
+  /* background-color:#EBEBEB; */
+}
+#content .views-field-title {
+  /* text-shadow:0 0 2px #b7b7b7; */
+  font-size: 12px;
+  font-weight: bold;
+  line-height:1.25;
+}
+#content .view-slideshow .views-field-title {
+  font-size: 1em;
+}
+#columns {
+  margin-bottom: 20px;
+}
+#columns .views-row {
+  padding: 20px 0;
+  border-bottom: #d4d4d4 solid 1px;
+}
+#columns .views-row-first {
+  padding:0 0 20px;
+}
+
+#columns .block .block-title {
+  background:none;
+  color:#F48026;
+  display:block;
+  font-size:16px;
+  margin:0;
+  padding:4px 0px 15px;
+}
+
+
+
+
+.view-slideshow {
+  width:640px;
+  /* -moz-box-shadow: 0 0 2px 0px #777; */
+  /* -webkit-box-shadow: 0 0 2px 0px #777; */
+  /* box-shadow: 0 0 2px 0px #777; */
+}
+
+.views_slideshow_thumbnailhover_breakout_teasers {
+  display:block;
+  /* height:40px; */
+  width:640px;
+  /* background:url("images/trans-black-80.png") repeat scroll 0 0 transparent; */
+}
+
+.views_slideshow_thumbnailhover_div_breakout_teaser {
+  color:#A7A7A7;
+  cursor:pointer;
+  display:block;
+  float:left;
+  font-weight:normal;
+  padding:5px 10px 10px 0;
+  text-align:left;
+  text-transform:uppercase;
+  /* text-shadow:0px 0px 12px #E6E600; */
+}
+
+.views_slideshow_thumbnailhover_div_breakout_teaser:hover {
+  color:#FFF;
+}
+
+.views_slideshow_thumbnailhover_breakout_teasers .activeSlide {
+  background-color:transparent;
+  color:#333333;
+  text-shadow:0 0 2px #FFFFFF;
+}
+
+
+
+.views_slideshow_thumbnailhover_div_breakout_teaser .views-field-title {
+  display: block;
+  /* line-height:40px; */
+  /* text-transform:uppercase; */
+}
+
+.highlight-image-caption {
+  display:block;
+  height:300px;
+  position:relative;
+  width:640px;
+}
+.highlight-image-caption .field-field-slideshow-teaser {
+  background:url("images/trans-black-70.png") repeat scroll 0 0 transparent;
+  bottom:0;
+  color:#FFFFFF;
+  position:absolute;
+  right:0;
+  width:100%;  
+}
+img {
+  vertical-align:text-bottom;
+}
+div.slideshow-teaser {
+  display:block;
+}
+.slideshow-teaser-inner {
+  font-size:14px;
+  line-height:20px;
+  padding:20px;
+}
+span.slideshow-more a {
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  -moz-box-shadow: 0 8px 16px -8px #212121;
+  -webkit-box-shadow: 0 8px 16px -8px #212121;
+  box-shadow: 0 8px 16px -8px #212121;
+  background-color:#797979;
+  color:#FFFFFF;
+  /* height:20px; */
+  padding:1px 5px;
+  margin-left:20px;
+  text-align:center;  
+}
+
+span.slideshow-more a:hover {
+  background-color:#F48026;
+  color:#FFFFFF;
+  text-decoration: none;
+}

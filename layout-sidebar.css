@@ -1,0 +1,14 @@
+#content,
+#right { float:left; }
+
+#content { width:660px; }
+#right { 
+  margin-left:20px;
+  width:260px;
+}
+div.content-wrapper {
+  padding:0 20px 0 0;
+}
+#page div.page-content {
+  padding:2px 20px 20px;
+}

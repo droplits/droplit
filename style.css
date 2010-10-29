@@ -19,15 +19,10 @@ a {
 div.limiter { width:980px; }
 
 #logo {
-  background-color:#FFF;
-  margin-top:20px;
+  background-color:transparent;
 }
 #logo h1 a {
-  width:400px;
-  height:110px;
-  background:#FFF url('images/konbit-sante.png') no-repeat;
   display:block;
-  text-indent:-10000px;
 }
 
 #top { /* background:url("images/droplit-gradient.png") repeat-x scroll 0 -30px transparent; */ }
@@ -148,7 +143,6 @@ div.limiter { width:980px; }
  * Page elements ======================================================
  */
 div.pager,
-#header,
 #footer {
   background:#f8f8f8;
   -moz-box-shadow:#ccc 0px 0px 3px;
@@ -174,11 +168,6 @@ body.droplit #page {
 
 #tabs div.page-tabs {
   background:#f8f8f8;
-  }
-
-#header {
-  width:950px;
-  padding:5px;
   }
 
 /**

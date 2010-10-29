@@ -15,28 +15,29 @@
   </div></div>
   <?php endif; ?>
 
-  <div id='logo' class='clear-block limiter'>
-    <h1 style="width:400px;float:left;"><a href="/">Konbit Sante</a></h1>
-    <?php // print $header ?>
+  <div id='coolshit'><div class='limiter clear-block'>
 
-    <div style="float:right;text-align:right;width:260px;padding: 20px 20px 0pt;">
-      <div class="signup-box">
-        <input type="text" maxlength="255" name="email" id="email-form" value="Email (example only)" class="form-text required inline" style="display:inline;color:#666;font-size:11px;background-color:#FFF;width:80px;">
-        <input type="text" maxlength="255" name="zip" id="email-form" value="Zip (example only)" class="form-text required inline" style="display:inline;color:#666;font-size:11px; background-color:#FFF;width:70px;">
-        <input type="submit" name="op" id="edit-submit" value="Join" class="form-submit">        
-      </div>
-      <div id="take-action" class="clear-block">
-        <div class="take-action-content clear-block">
-        	<a class="large-button" href="#">Take Action</a>
-        </div>
-      </div>
-      <div id="donate" class="clear-block">
-        <div class="donate-content clear-block">
-          <a href="/node/6" class="large-button">Donate Now</a>  
-        </div>    
-      </div>
-    </div>
-  </div>
+		<?php if ($search_box): ?>
+		<div id="search_box_top" class="clear-block">
+			<?php print $search_box ?>
+		</div>
+		<?php endif; ?>
+
+  </div></div>
+
+  <div id='header'><div class='limiter clear-block'>
+
+
+		<div id="logo-area" class="clear-block">
+			<div id="logo">
+
+        <?php print $logo_block; ?>
+
+			</div><!--/ #logo -->
+		</div><!-- #logo-area -->
+
+  </div></div>
+	
 
   <?php // if (!empty($navigation)): ?>
   <div id='navigation' class='limiter clear-block'>

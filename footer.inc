@@ -16,7 +16,15 @@
     <?php if ($user_links) print theme('links', $user_links) ?>
   </div>
 
-  <?php print $closure ?>
+  <?php print $scripts ?>
+  <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
+  <!-- Script for SUPERFISH -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $("#superfish ul.menu").superfish(); });
+  </script>
+  <script type="text/javascript"> jQuery('a[href=#]').attr('href', 'javascript:void(0);'); </script>
+  <?php print $closure; ?>
 
   </body>
 </html>

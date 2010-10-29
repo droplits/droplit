@@ -39,7 +39,27 @@ function droplit_preprocess_page(&$vars) {
   $attr = array();
   $attr['class'] = $vars['body_classes'];
   $attr['class'] .= ' droplit'; // Add the droplit class so that we can avoid using the 'body' selector
-  
+
+
+
+
+
+
+  // Prep the logo for being displayed
+  $site_slogan = (!$vars['site_slogan']) ? '' : ' - '. $vars['site_slogan'];
+  $logo_img ='';
+  $title = $text = variable_get('site_name', '');
+  if ($vars['logo']) {
+    $logo_img = "<img src='". $vars['logo'] ."' alt='". $title ."' border='0' />";
+    // $text = ($vars['site_name']) ? $logo_img . $text : $logo_img;
+    $text = ($vars['site_name']) ? $logo_img : $logo_img;
+  }
+  $vars['logo_block'] = (!$vars['site_name'] && !$vars['logo']) ? '' : '<h1>'. l($text, '', array('attributes' => array('title' => $title . $site_slogan), 'html' => !empty($logo_img))) .'</h1>';
+  // Even though the site_name is turned off, let's enable it again so it can be used later.
+  $vars['site_name'] = variable_get('site_name', '');
+
+
+
   
   // Automatically adjust layout for page with right sidebar content if no
   // explicit layout has been set.
@@ -103,28 +123,25 @@ function droplit_breadcrumb($breadcrumb, $prepend = TRUE) {
   if (!drupal_is_front_page()) {
     $item = menu_get_item();
     $end = end($breadcrumb);
-    // if ($end && strip_tags($end) !== $item['title']) {
-    //   $breadcrumb[] = "<strong>". check_plain($item['title']) ."</strong>";
-    // }
+    if ($end && strip_tags($end) !== $item['title']) {
+      $breadcrumb[] = "<strong>". check_plain($item['title']) ."</strong>";
+    }
   }
 
   // Remove the home link.
-  
-    $links = $vars['breadcrumb'];  
-  
-  foreach ($breadcrumb as $key => $link) {
-        $links[$key]['html'] = true;
-        $links[$key]['title'] = '<span>'. $link['title'] . '</span>';
-  //  if (strip_tags($link) === t('Home')) {
-  //    unset($breadcrumb[$key]);
-  //    break;
-  //  }
-  }
+  // foreach ($breadcrumb as $key => $link) {
+  //   if (strip_tags($link) === t('Home')) {
+  //     unset($breadcrumb[$key]);
+  //     break;
+  //   }
+  // }
 
-    $vars['breadcrumb'] = $links;
-    
   // Optional: Add the site name to the front of the stack.
-  //
+  // if ($prepend) {
+  //   $site_name = empty($breadcrumb) ? "<strong>". check_plain(variable_get('site_name', '')) ."</strong>" : l(variable_get('site_name', ''), '<front>', array('purl' => array('disabled' => TRUE)));
+  //   array_unshift($breadcrumb, $site_name);
+  // }
+
   foreach ($breadcrumb as $link) {
     $output .= "<span class='breadcrumb-link'>{$link}</span>";
   }

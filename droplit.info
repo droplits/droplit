@@ -12,6 +12,8 @@ stylesheets[screen][] = "droplit.css"
 
 stylesheets[all][] = "sf/css/superfish.css"
 stylesheets[all][] = "sf/css/theme.css"
+scripts[] = "sf/js/supersubs.js"
+scripts[] = "sf/js/hoverIntent.js"
 scripts[] = "sf/js/superfish.js"
 
 ; Regions
@@ -49,7 +51,7 @@ layouts[sidebar][regions][] = "content"
 layouts[sidebar][regions][] = "content_bottom"
 layouts[sidebar][regions][] = "right"
 
-; 2/1 MECA HOMEPAGE
+; 2/1 Sidebar for Homepage
 layouts[sidebarhp][name] = "Sidebar for Homepage"
 layouts[sidebarhp][description] = "Main HOMEPAGE content with sidebar."
 layouts[sidebarhp][stylesheet] = "layout-sidebar-hp.css"
@@ -198,10 +200,3 @@ skinr[droplit-float-imagefield][options][1][label] = Float ImageField left
 skinr[droplit-float-imagefield][options][1][class] = droplit-float-imagefield-left
 skinr[droplit-float-imagefield][options][2][label] = Float ImageField right
 skinr[droplit-float-imagefield][options][2][class] = droplit-float-imagefield-right
-
-; Set the default settings to be used in theme-settings.php
-settings[droplit_block_edit_links]        = 1
-settings[droplit_rebuild_registry]        = 0
-settings[droplit_showgrid]                = 0
-settings[droplit_header_display]          = full
-settings[droplit_animated_submit]         = 1
